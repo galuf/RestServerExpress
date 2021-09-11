@@ -60,13 +60,14 @@ const usuariosPost = async (req, res = response) => {
 
 const usuariosDel = async (req, res = response) => {
   const { id } = req.params;
+
   //Barrando Fisicamente
   //const usuario = await Usuario.findByIdAndDelete(id);
 
   //Modificando el estado de usuario
   const usuario = await Usuario.findByIdAndUpdate(id, { estado: false });
 
-  res.json(usuario);
+  res.json({ usuario });
 };
 
 const usuariosPatch = (req, res = response) => {
