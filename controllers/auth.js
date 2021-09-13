@@ -45,6 +45,7 @@ const login = async (req, res = response) => {
   }
 };
 
+// Login with google
 const googleSignin = async (req, res = response) => {
   const { id_token } = req.body;
 
