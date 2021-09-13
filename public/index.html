@@ -22,7 +22,7 @@
       
       var url = (window.location.hostname.includes('localhost'))
                 ? 'http://localhost:8080/api/auth/google'
-                : 'http://localhost:8080/api/auth/google' // Esto es en produccion (poner link de produccion)
+                : 'https://node-master-ga.herokuapp.com/api/auth/google' // Esto es en produccion (poner link de produccion)
       
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
