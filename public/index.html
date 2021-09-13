@@ -24,6 +24,8 @@
                 ? 'http://localhost:8080/api/auth/google'
                 : 'https://node-master-ga.herokuapp.com/api/auth/google' // Esto es en produccion (poner link de produccion)
       
+      console.log(window.location.hostname.includes('localhost'))
+
       function onSignIn(googleUser) {
         console.log('Click');
         var profile = googleUser.getBasicProfile();
