@@ -6,8 +6,8 @@ const dbConnection = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       //Cambio - SIn esto funciona local
-      useCreateIndex: true,
-      useFindAndModify: false,
+      //useCreateIndex: true,
+      //useFindAndModify: false,
       //Fin cambio
     });
 
